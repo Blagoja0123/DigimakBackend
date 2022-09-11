@@ -4,9 +4,9 @@ const dotenv = require('dotenv').config();
 const app = express();
 const mongoose = require('mongoose');
 
+app.use(cors());
 app.use(express.json());
 
-app.use(cors());
 
 
 const WooRoute = require('./routes/WooCommerceRoutes.js');
@@ -22,4 +22,4 @@ app.get('/', (req, res)=>{
     res.json({message: "Hello World"})
 })
 
-app.listen('https://digimak-frontend.vercel.app/', ()=> console.log("Server connected!"));
+// app.listen('https://digimak-frontend.vercel.app/', ()=> console.log("Server connected!"));
