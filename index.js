@@ -22,4 +22,4 @@ app.get('/', (req, res)=>{
     res.json({message: "Hello World"})
 })
 
-app.listen(3000, ()=> console.log("Server connected!"));
+app.listen('https://digimak-frontend.vercel.app/', ()=> console.log("Server connected!"));
